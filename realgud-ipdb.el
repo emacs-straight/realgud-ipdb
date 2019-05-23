@@ -1,10 +1,10 @@
-;;; realgud-ipdb.el --- Realgud front-end to ipdb
+;;; realgud-ipdb.el --- Realgud front-end to ipdb -*- lexical-binding: t -*-
 
 ;; Author: Rocky Bernstein <rocky@gnu.org>
 ;; Version: 1.0.0
 ;; Package-Requires: ((realgud "1.4.5") (load-relative "1.2") (cl-lib "0.5") (emacs "24"))
 ;; URL: http://github.com/rocky/realgud-ipdb
-;; Compatibility: GNU Emacs 24.x
+;; Compatibility: GNU Emacs 25.x
 
 ;; Copyright (C) 2019 Free Software Foundation, Inc
 
@@ -26,6 +26,7 @@
 ;;; Commentary:
 
 ;; realgud support for the Python ipdb
+;; See https://pypi.org/project/ipdb/
 
 ;;; Code:
 
@@ -38,7 +39,7 @@
 (defgroup realgud-ipdb  nil
   "Realgud interface to ipdb"
   :group 'realgud
-  :version "24.3")
+  :version "25.1")
 
 (require-relative-list '( "./ipdb/ipdb" ) "realgud-")
 
